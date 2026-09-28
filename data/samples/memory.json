@@ -1,0 +1,10 @@
+{
+  "blocks": [100, 500, 200, 300, 600],
+  "operations": [
+    {"action": "alloc", "pid": "P1", "size": 212},
+    {"action": "alloc", "pid": "P2", "size": 417},
+    {"action": "alloc", "pid": "P3", "size": 112},
+    {"action": "free", "pid": "P2"},
+    {"action": "alloc", "pid": "P4", "size": 426}
+  ]
+}
