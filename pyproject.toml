@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "os-resource-sim"
+version = "0.1.0"
+description = "Integrated Python and Bash operating-system resource-management simulation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "7505-coder"}]
+dependencies = []
+
+[project.optional-dependencies]
+viz = ["matplotlib>=3.7"]
+
+[project.scripts]
+os-resource-sim = "os_resource_sim.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
